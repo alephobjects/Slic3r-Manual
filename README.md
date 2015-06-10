@@ -2,7 +2,7 @@ This is the LaTeX source code for the Slic3r Manual.
 
 ###Work in Progress!
 
-A working copy of the PDF can be found [here](https://dl.dropboxusercontent.com/u/22464622/Slic3r-Manual/Slic3r-Manual.pdf).
+Initial commit from http://github.com/alephobjects/taz-docs updated Slic3r manual and fork of http://github.com/alexjr/Slic3r-Manual
 
 
 Copyright 2013, Aleph Objects, Inc.
