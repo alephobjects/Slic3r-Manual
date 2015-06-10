@@ -4,5 +4,7 @@ The first release of this manual was sponsored by Lulzbot - Aleph Objects, Inc. 
 
 You can read the manual at http://manual.slic3r.org/
 
+Updates are being ported into tex branch.
+
 Copyright 2013-2014, Aleph Objects, Inc.
 License: CC-BY-SA 3.0
