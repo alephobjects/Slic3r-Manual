@@ -1,5 +1,5 @@
 %!TEX root = Slic3r-Manual.tex
-\section{Simple Mode} % (fold)
+\subsection{Simple Mode} % (fold)
 \label{sec:simple_mode}
 \index{simple mode}
 
@@ -12,9 +12,9 @@ Slic3r has two modes of operation, Simple and Expert. These may be chosen from t
 \label{fig:preferences_general}
 \end{figure}
 
-Simple mode offers a reduced set of options, enough for the beginner to get started with.  Expert mode give more control over how Slic3r produces the G-code and will be looked at later.
+Simple mode offers a reduced set of options, enough for the beginner to get started with.  Expert mode gives more control over how Slic3r produces the G-code and will be looked at later.
 
-\subsection{Print Settings}
+\subsubsection{Print Settings}
 \index{Print Settings}
 
 The \texttt{Print Settings} tab provides the opportunity to change settings related to the actual print.  Whereas the other tabs are changed rarely, the settings on this tab will be modified regularly, possibly for each model printed.
@@ -36,7 +36,7 @@ The \texttt{Print Settings} tab provides the opportunity to change settings rela
 	\item \textbf{Print speed}  - Shorter layers will result in smoother prints but each print will take longer, simply because the extruder must trace the pattern more times.  A later goal will be to strike a balance between layer height, the speed of the printer, and the quality of the resulting print.
 \end{itemize}
 \index{Print Settings!Perimeters}
-\texttt{Perimeters} defines the minimum number of vertical shells (i.e. walls) a print will have.  Unless the model requires single width walls it is generally recommended to have a minimum of two perimeters as this gives some insurance that if a section of the perimeter is not printed correctly then the second perimeter will help cover it.
+\texttt{Perimeters} defines the minimum number of vertical shells (i.e. walls) a print will have.  Unless the model requires single width walls it is generally recommended to have a minimum of two perimeters as this gives some insurance that if a subsection of the perimeter is not printed correctly then the second perimeter will help cover it.
 
 \index{Print Settings!Solid layers}
 The upper and lowermost layers that sandwich the model are filled with a \texttt{Solid layers} pattern.  For the bottom layers the important factor to consider is how the surface will look should there be a mistake whilst laying down the first layer, and for this reason it is recommended to have at least two bottom layers.
@@ -70,7 +70,7 @@ Another tip to consider: Setting the top solid layer to zero, and setting the in
 A density value of 0.4 is enough to give almost all models good mechanical strength.  A value of 0.2 is usually the minimum required to support flat ceilings.
 
 \index{Print Settings!Infill!Fill pattern}
-Slic3r offers several fill patterns which will be discussed in more depth in section \ref{sec:infill_patterns_and_density} - Infill Choices.  Choosing a \texttt{Fill pattern} will depend on the kind of model, the desired structural  strength, print speed, and personal taste.  The more exotic fill methods are usually too slow and unnecessarily complex for most use cases, and so most of the time the infill pattern is either \texttt{rectilinear}, \texttt{line}, or \texttt{honeycomb}.  Honeycomb gives the most strength but is slower than both rectilinear or line.
+Slic3r offers several fill patterns which will be discussed in more depth in subsection \ref{sec:infill_patterns_and_density} - Infill Choices.  Choosing a \texttt{Fill pattern} will depend on the kind of model, the desired structural  strength, print speed, and personal taste.  The more exotic fill methods are usually too slow and unnecessarily complex for most use cases, and so most of the time the infill pattern is either \texttt{rectilinear}, \texttt{line}, or \texttt{honeycomb}.  Honeycomb gives the most strength but is slower than both rectilinear or line.
 
 % paragraph infill (end)
 
@@ -125,10 +125,10 @@ In simple mode there are only three speed settings to consider:
 
 \paragraph{Sequential Printing.} % (fold)
 \label{par:sequential_printing}
-This feature allows to compose a plate of objects but have the printer complete each one individually before going back to Z = 0 and starting with the next one. See the section about Sequential Printing in the Advanced Topics chapter.
+This feature allows to compose a plate of objects but have the printer complete each one individually before going back to Z = 0 and starting with the next one. See the subsection about Sequential Printing in the Advanced Topics chapter.
 
 
-\subsection{Filament Settings}
+\subsubsection{Filament Settings}
 \index{Filament Settings}
 
 The \texttt{Filament Settings} will normally be used infrequently, for example on receipt of a new roll of filament.
@@ -158,7 +158,7 @@ These values are also filled from the wizard, but here the opportunity exists to
 % paragraph temperature (end)
 
 
-\subsection{Printer Settings}
+\subsubsection{Printer Settings}
 \index{Printer Settings}
 
 The \texttt{Printer Settings} will be updated the least, unless Slic3r is going to be used for many printers, for example, in a 3D printer farm.
@@ -182,7 +182,7 @@ The \texttt{Print center} is the point around which the print will be centered. 
 \index{Printer Settings!Size and coordinates!Z offset}
 \texttt{Z offset} can be used to compensate for an incorrectly calibrated Z end-stop.  If the nozzle stops slightly too far from the bed, then adding a negative value will offset all layers by that amount.  The correct solution however is to fix the end-stop itself.
 
-The optimal Z endstop position is where the nozzle tip barely touches the surface of the bed when homed.  A sheet of paper makes a good gauge for this very small distance.  It is not recommended to use this setting to try and improve layer adhesion, by "squashing" the bottom layer into the bed, instead look at the suggestions in section \ref{sec:the_important_first_layer}.
+The optimal Z endstop position is where the nozzle tip barely touches the surface of the bed when homed.  A sheet of paper makes a good gauge for this very small distance.  It is not recommended to use this setting to try and improve layer adhesion, by "squashing" the bottom layer into the bed, instead look at the suggestions in subsection \ref{sec:the_important_first_layer}.
 % paragraph size_and_coordinates (end)
 
 \paragraph{Firmware.} % (fold)
@@ -237,4 +237,4 @@ Some common G-codes to use after the print ends are:
 \end{itemize}
 % paragraph start_end_g_code (end)
 
-% section simple_mode (end)\section{Simple Mode}
+% subsection simple_mode (end)\subsection{Simple Mode}

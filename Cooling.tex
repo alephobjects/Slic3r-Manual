@@ -1,6 +1,6 @@
 %!TEX root = Slic3r-Manual.tex
 
-\section{Cooling} % (fold)
+\subsection{Cooling} % (fold)
 \label{sec:cooling}
 \index{cooling}
 \index{temperature}
@@ -18,7 +18,7 @@ There are two main techniques for cooling: adding a fan and slowing down the pri
 
 Figure \ref{fig:cooling_chart} shows the strategy adopted by Slic3r.  Reading from right to left, when the minimum fan threshold (\#2) is reached the fan is turned on.  This increases in intensity as the layer time decreases.  The print speed remains constant until the estimated print time drops below a certain threshold (\#1), this is when the print speed is reduced until it reaches it's minimum value.
 
-\subsection{Fans} % (fold)
+\subsubsection{Fans} % (fold)
 \label{sub:fans}
 \index{cooling!fans}
 Most electronics and firmware allow the addition of a fan via a spare connector.  These can then be instructed with G-code, from Slic3r, to turn on or off as the model requires, and to rotate at different speeds.
@@ -27,17 +27,17 @@ Care should be taken with the positioning of the fan so that it does not cool an
 
 A duct may help in guiding the flow correctly, and there are several designs available online, for a wide variety of printers.
 
-% subsection fans (end)
+% subsubsection fans (end)
 
-\subsection{Slowing Down} % (fold)
+\subsubsection{Slowing Down} % (fold)
 \label{sub:slowing_down}
 \index{cooling!slowing down}
 Slic3r can tell the printer to slow down if the estimated layer time is above a certain threshold.
 
 Care must be taken as the intended effect could be mitigated by the nozzle not moving far enough away from the fresh extrusion, a problem with small, detailed layers.  For this reason it is usually recommended to use a fan where possible.
-% subsection slowing_down (end)
+% subsubsection slowing_down (end)
 
-\subsection{Configuring} % (fold)
+\subsubsection{Configuring} % (fold)
 \label{sub:configuring_cooling}
 
 In simple mode Slic3r will attempt to choose the optimal settings for both fans and speed.  Expert mode gives more granular options.
@@ -70,6 +70,6 @@ In simple mode Slic3r will attempt to choose the optimal settings for both fans 
 \end{itemize}
 
 
-% subsection configuring_cooling (end)
+% subsubsection configuring_cooling (end)
 
-% section cooling (end)
+% subsection cooling (end)
