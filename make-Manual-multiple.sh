@@ -2,19 +2,19 @@
 
 set -x
 clear
-#makeindex -s Manual.gst -o Manual.gls Manual.glo && \
-#makeindex -s Manual.ist Manual.idx && \
-rm -f Manual.pdf && \
-pdflatex  -halt-on-error Manual.tex && \
+#makeindex -s Slic3r-Manual.gst -o Slic3r-Manual.gls Slic3r-Manual.glo && \
+#makeindex -s Slic3r-Manual.ist Slic3r-Manual.idx && \
+rm -f Slic3r-Manual.pdf && \
+pdflatex  -halt-on-error Slic3r-Manual.tex && \
 #evince Manual.pdf
 #exit 0
-makeindex -s Manual.gst -o Manual.gls Manual.glo && \
-makeindex -s Manual.ist Manual.idx && \
-pdflatex  -halt-on-error Manual.tex && \
-makeindex -s Manual.gst -o Manual.gls Manual.glo && \
-makeindex -s Manual.ist Manual.idx && \
-pdflatex  -halt-on-error Manual.tex && \
-pdflatex  -halt-on-error Manual.tex && \
-pdflatex  -halt-on-error Manual-thumbs.tex
-evince Manual.pdf 
+makeindex -s Slic3r-Manual.gst -o Slic3r-Manual.gls Slic3r-Manual.glo && \
+makeindex -s Slic3r-Manual.ist Slic3r-Manual.idx && \
+pdflatex  -halt-on-error Slic3r-Manual.tex && \
+makeindex -s Slic3r-Manual.gst -o Slic3r-Manual.gls Slic3r-Manual.glo && \
+makeindex -s Slic3r-Manual.ist Slic3r-Manual.idx && \
+pdflatex  -halt-on-error Slic3r-Manual.tex && \
+pdflatex  -halt-on-error Slic3r-Manual.tex && \
+pdflatex  -halt-on-error Slic3r-Manual-thumbs.tex
+evince Slic3r-Manual.pdf 
 
